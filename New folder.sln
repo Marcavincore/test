@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "New folder", "..\..\..\..\Desktop\Sp\New folder\", "{E6949981-6C83-4228-8625-A36B462068A0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/New folder"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Sp\New folder\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\New folder\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/New folder"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Sp\New folder\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\New folder\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52415"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6949981-6C83-4228-8625-A36B462068A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6949981-6C83-4228-8625-A36B462068A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
