@@ -60,17 +60,22 @@
     <p>
         <asp:Label ID="Label6" runat="server" Text="Product"></asp:Label>
             </p>
-<p>
-&nbsp;&nbsp;<asp:ListBox ID="ListBox1" runat="server" DataSourceID="AccessDataSource1" 
-            DataTextField="Product" DataValueField="ID" Height="102px"></asp:ListBox>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:AccessDataSource ID="AccessDataSource1" runat="server" 
-            DataFile="~/Data/product.accdb" SelectCommand="SELECT * FROM [product]">
-        </asp:AccessDataSource>
-</p>
+    <asp:Panel ID="Panel1" VerticalAlign="Center" runat="server" Height="208px">
+        <asp:CheckBoxList ID="chkbox" runat="server" DataSourceID="SqlDataSource1" 
+            DataTextField="Image" DataValueField="Product" >
+          </asp:CheckBoxList>
+                    
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+            SelectCommand="SELECT [Image], [Product] FROM [product]">
+        </asp:SqlDataSource>
+
+    </asp:Panel>
+
     <p>
-        <asp:Button ID="Nextbtn" runat="server" Text="Next" OnClick="btnNewEntry_Click" 
-            BackColor="#546E96" />
+        <asp:Button ID="Sendbtn" runat="server" Text="Send" OnClick="btnNewEntry_Click" 
+            BackColor="#546E96"  />
     </p>
 
 </asp:Content>
