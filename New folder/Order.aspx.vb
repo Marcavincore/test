@@ -17,11 +17,12 @@ Partial Class Info
             sqlconn.ConnectionString = connString
             sqlquery.Connection = sqlconn
             sqlconn.Open()
-            sqlquery.CommandText = "INSERT INTO Info(Name, Address, Phone, Email)VALUES(@Name, @Adress, @Phone, @Email)"
+            sqlquery.CommandText = "INSERT INTO Info(Name, Address, Phone, Email, Type)VALUES(@Name, @Adress, @Phone, @Email, @Type)"
             sqlquery.Parameters.AddWithValue("@Name", Nametxtbox.Text)
             sqlquery.Parameters.AddWithValue("@Adress", Addtxtbox.Text)
             sqlquery.Parameters.AddWithValue("@Phone", Phonetxtbox.Text)
             sqlquery.Parameters.AddWithValue("@Email", Emailtxtbox.Text)
+            sqlquery.Parameters.AddWithValue("@Type", DropDownList1.Text)
             sqlquery.ExecuteNonQuery()
             sqlconn.Close()
 
