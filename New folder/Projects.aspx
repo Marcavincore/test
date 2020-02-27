@@ -9,23 +9,6 @@
     </style>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <div class="diy-f-spot  parallax" 
-        style="background-image: url('https://static.powersites.ph/var/m_6/60/601/5260/75753-windsor_bg1.jpg'); height: 113px; background-attachment: fixed; background-position: center center; background-repeat: repeat; background-size: cover; color: rgb(0, 0, 0); font-family: Questrial, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; padding: 20px;">
-        <div class="diy-f-spot-inner">
-            <div class="widget-wrapper widget-element free-text diy-resizable " 
-                style="margin: 15px;">
-                <div id="widget-id-389827" class="widget-body " style="padding: 20px 0px 0px;">
-                    <div class="freetextarea">
-                        <p id="projects" style="text-align: center;">
-                            <font color="#ffffff"><span style="font-size: 28px;">PROJECTS</span></font></p>
-                    </div>
-                </div>
-            </div>
-            <div class="clear" 
-                style="float: none; clear: both; display: block; overflow: hidden; visibility: hidden; width: 0px; height: 0px;">
-            </div>
-        </div>
-    </div>
     <div class="diy-f-spot  " 
         style="color: rgb(0, 0, 0); font-family: Questrial, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; padding: 20px; background-color: rgb(237, 151, 40); background-repeat: repeat;">
         <div class="diy-fi-container diy-fi-effect-6">
