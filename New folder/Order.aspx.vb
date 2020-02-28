@@ -28,7 +28,16 @@ Partial Class Info
 
             Using mm As New MailMessage("marcavin23.mcl@gmail.com", "07lastone23@gmail.com")
                 mm.Subject = "Order Request"
-                mm.Body = "Name: " + Nametxtbox.Text + vbCrLf + "Address: " + Addtxtbox.Text + vbCrLf + "Contact Number: " + Phonetxtbox.Text + vbCrLf + "Email: " + Emailtxtbox.Text + vbCrLf + "Type: " + DropDownList1.Text + vbCrLf + "Design: " + x.SelectedItem.Value
+                Dim message As String = ""
+                Dim i As Integer = 0
+                Do While (i < x.Items.Count)
+                    If x.Items(i).Selected Then
+                        message = (message _
+                                    + (x.Items(i).Value + "; "))
+                    End If
+                    i = (i + 1)
+                Loop
+                mm.Body = "Name: " + Nametxtbox.Text + vbCrLf + "Address: " + Addtxtbox.Text + vbCrLf + "Contact Number: " + Phonetxtbox.Text + vbCrLf + "Email: " + Emailtxtbox.Text + vbCrLf + "Type: " + DropDownList1.Text + vbCrLf + "Design: " + message
                 mm.IsBodyHtml = False
                 Dim smtp As New SmtpClient()
                 smtp.Host = "smtp.gmail.com"

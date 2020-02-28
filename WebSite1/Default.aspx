@@ -42,9 +42,18 @@
             <asp:Label ID="lblImageTitle" runat="server" Text="Label" /><br />
             <b>Description:</b>
             <asp:Label ID="lblImageDescription" runat="server" Text="Label" />
+            <asp:CheckBoxList ID="CheckBoxList1" runat="server" 
+                DataSourceID="AccessDataSource1" DataTextField="Product" 
+                DataValueField="Product">
+            </asp:CheckBoxList>
+            <asp:AccessDataSource ID="AccessDataSource1" runat="server" 
+                DataFile="~/product.accdb" 
+                SelectCommand="SELECT [Product], [Image] FROM [product]">
+            </asp:AccessDataSource>
         </td>
     </tr>
 </table>
+    <br />
     </form>
 </body>
 </html>
